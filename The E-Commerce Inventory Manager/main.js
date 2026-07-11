@@ -22,3 +22,12 @@ console.log(inventory);
 inventory[0].category = "Electronics";
 console.log(inventory);
 
+const extraDetails = {
+    warranty: "2 years",
+    color: "Silver"
+}
+
+const updatedLaptop = { ...inventory[0], ...extraDetails };
+console.log(updatedLaptop);
+
+
