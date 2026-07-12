@@ -30,4 +30,6 @@ const extraDetails = {
 const updatedLaptop = { ...inventory[0], ...extraDetails };
 console.log(updatedLaptop);
 
-
+const calculateTotalValue = (price, quantity) => {
+    return price * quantity;
+}
