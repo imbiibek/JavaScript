@@ -94,28 +94,81 @@
 
 // calculate(num1, num2, operator)
 
-let num1 = Number(prompt("Enter first number:"));
-let num2 = Number(prompt("Enter second Number:"));
-let operator = prompt("Enter operator:");
+// let num1 = Number(prompt("Enter first number:"));
+// let num2 = Number(prompt("Enter second Number:"));
+// let operator = prompt("Enter operator:");
 
-function calculate(num1, num2, operator) {
-    switch (operator) {
-        case '+':
-            return num1 + num2;
-        case '-':
-            return num1 - num2;
-        case '*':
-            return num1 * num2;
-        case '/':
-            return num2 === 0 ? "Error: cannot divide bye zero" : num1 / num2;
-        default:
-            return "Error: Invalid Operator";
-    }
-}
+// function calculate(num1, num2, operator) {
+//     switch (operator) {
+//         case '+':
+//             return num1 + num2;
+//         case '-':
+//             return num1 - num2;
+//         case '*':
+//             return num1 * num2;
+//         case '/':
+//             return num2 === 0 ? "Error: cannot divide bye zero" : num1 / num2;
+//         default:
+//             return "Error: Invalid Operator";
+//     }
+// }
 
-let result = calculate(num1, num2, operator);
-console.log(`Result:- ${result}`);
+// let result = calculate(num1, num2, operator);
+// console.log(`Result:- ${result}`);
 
+
+
+
+
+const users = [{
+    name: "ram",
+    age: 20,
+    class: 12,
+    gender: "male"
+},
+{
+    name: "hari",
+    age: 22,
+    class: 12,
+    gender: "male"
+},
+{
+    name: "shyam",
+    age: 20,
+    class: 12,
+    gender: "male"
+}];
+const mapUsers = users.map((item) => `the user name is ${item.name}the age of the users is ${item.age}`);
+console.log(mapUsers.join("\n"));
+
+
+
+
+const students = [{
+    name: "sid",
+    age: 18,
+    class: 12,
+    gender: "Male"
+},
+{
+    name: "Aryan",
+    age: 19,
+    class: 12,
+    gender: "Male"
+},
+{
+    name: "Priya",
+    age: 20,
+    class: 12,
+    gender: "female"
+}];
+
+//  const mapStudents = students.map((item) => `The Student name is ${item.name} The Student age is ${item.age}`);
+// console.log(mapStudents.join('\n'));
+
+const adults = students.filter((item) => item.age >= 19);
+const names = adults.map((item) => `${item.name}, ${item.age}`)
+console.log(names);
 
 
 
