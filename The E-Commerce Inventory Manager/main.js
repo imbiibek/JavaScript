@@ -33,3 +33,29 @@ console.log(updatedLaptop);
 const calculateTotalValue = (price, quantity) => {
     return price * quantity;
 }
+
+const keyboard = inventory[2];
+const keyboardTotal = calculateTotalValue(keyboard.price, keyboard.quantity);
+
+
+console.log(`Keyboard Value:- ${keyboardTotal}`);
+
+const adminUser = {
+    name: "Manager",
+    permissions: {
+        canEdit: true,
+        canDelete: false
+    }
+}
+
+if (adminUser.permissions.canEdit) {
+    console.log("Access Granted: Inventory updated.");
+}
+
+
+
+
+
+
+
+
