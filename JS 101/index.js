@@ -180,9 +180,21 @@
 
 //Module 
 
-import multiply, { add, subtract } from './math.js';
+// import multiply, { add, subtract } from './math.js';
 
-console.log(add(1, 2));
-console.log(multiply(2, 3));
+// console.log(add(1, 2));
+// console.log(multiply(2, 3));
+
+// Async and Await 
+
+async function slowTask() {
+    console.log("Start Task");
+
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    console.log("Task after 3 secs ");
+}
+
+slowTask();
+//console.log("This runs immediately");
 
 
