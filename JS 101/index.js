@@ -187,14 +187,45 @@
 
 // Async and Await 
 
-async function slowTask() {
-    console.log("Start Task");
+// async function slowTask() {
+//     console.log("Start Task");
 
-    await new Promise(resolve => setTimeout(resolve, 3000));
-    console.log("Task after 3 secs ");
+//     await new Promise(resolve => setTimeout(resolve, 3000));
+//     console.log("Task after 3 secs ");
+// }
+
+// slowTask();
+// console.log("This runs immediately");
+
+// const ptag = document.querySelector("#inner")
+// console.log(ptag);
+// ptag.innerHTML += "this is js"
+// ptag.style.color = "red"
+
+
+// const myPara = document.getElementsByTagName("p");
+
+// myPara.innerHTML = "Hello World";
+
+const item = [{
+    name: "Phone",
+    price: 5000,
+    model: "Android"
+},
+{
+    name: "Phone",
+    price: 7000,
+    model: "Iphone"
+},
+{
+    name: "Phone",
+    price: 8000,
+    model: "Windows"
 }
+];
 
-slowTask();
-//console.log("This runs immediately");
+const mapitem = item.map((gadget) => `${gadget.name} ${gadget.price} ${gadget.model}`);
+console.log(mapitem.join("\n"));
 
-
+const showItems = document.getElementById("item")
+showItems.innerHTML = mapitem;
