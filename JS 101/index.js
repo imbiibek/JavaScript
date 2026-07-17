@@ -207,25 +207,56 @@
 
 // myPara.innerHTML = "Hello World";
 
-const item = [{
-    name: "Phone",
-    price: 5000,
-    model: "Android"
+// const item = [{
+//     name: "Phone",
+//     price: 5000,
+//     model: "Android"
+// },
+// {
+//     name: "Phone",
+//     price: 7000,
+//     model: "Iphone"
+// },
+// {
+//     name: "Phone",
+//     price: 8000,
+//     model: "Windows"
+// }
+// ];
+
+// const mapitem = item.map((gadget) => `${gadget.name} ${gadget.price} ${gadget.model}`);
+// console.log(mapitem.join("\n"));
+
+// const showItems = document.getElementById("item")
+// showItems.innerHTML = mapitem;
+
+
+//Function 
+
+// function gender() {
+//     document.getElementById("result").innerHTML = "This is Female";
+// }
+
+//Object male female & all button , map , filter 
+
+const student = [{
+    name: "Ajay",
+    age: 19,
+    gender: "Male"
 },
 {
-    name: "Phone",
-    price: 7000,
-    model: "Iphone"
-},
-{
-    name: "Phone",
-    price: 8000,
-    model: "Windows"
+    name: "Jaya",
+    age: 20,
+    gender: "Female"
 }
 ];
 
-const mapitem = item.map((gadget) => `${gadget.name} ${gadget.price} ${gadget.model}`);
-console.log(mapitem.join("\n"));
 
-const showItems = document.getElementById("item")
-showItems.innerHTML = mapitem;
+function all() {
+    const allStudent = student.map((std) => `${std.name}, ${std.age}, ${std.gender}`);
+    const showItems = document.getElementById("all");
+    showItems.innerHTML = allStudent.join("<br>");
+}
+
+//onChange 
+
