@@ -258,5 +258,7 @@ function all() {
     showItems.innerHTML = allStudent.join("<br>");
 }
 
+document.querySelector("h1").innerHTML = "Good Bye";
+
 //onChange 
 
