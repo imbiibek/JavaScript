@@ -1,6 +1,13 @@
 
-// // const number3 = [...number, ...number1]
-// // console.log(number3);
+// Spread Operator 
+
+// const number = [1, 2, 3]
+// const number1 = [4, 5.6]
+
+// const number3 = [...number, ...number1]
+// console.log(number3);
+
+// JS Objects 
 
 // // const user = {
 // //     name: "hari",
@@ -239,26 +246,26 @@
 
 //Object male female & all button , map , filter 
 
-const student = [{
-    name: "Ajay",
-    age: 19,
-    gender: "Male"
-},
-{
-    name: "Jaya",
-    age: 20,
-    gender: "Female"
-}
-];
+// const student = [{
+//     name: "Ajay",
+//     age: 19,
+//     gender: "Male"
+// },
+// {
+//     name: "Jaya",
+//     age: 20,
+//     gender: "Female"
+// }
+// ];
 
 
-function all() {
-    const allStudent = student.map((std) => `${std.name}, ${std.age}, ${std.gender}`);
-    const showItems = document.getElementById("all");
-    showItems.innerHTML = allStudent.join("<br>");
-}
+// function all() {
+//     const allStudent = student.map((std) => `${std.name}, ${std.age}, ${std.gender}`);
+//     const showItems = document.getElementById("all");
+//     showItems.innerHTML = allStudent.join("<br>");
+// }
 
-document.querySelector("h1").innerHTML = "Good Bye";
+// document.querySelector("h1").innerHTML = "Good Bye";
 
 //onChange 
 
