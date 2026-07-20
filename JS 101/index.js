@@ -1,5 +1,5 @@
 
-// Spread Operator 
+// -----------  Spread Operator --------------------
 
 // const number = [1, 2, 3]
 // const number1 = [4, 5.6]
@@ -7,7 +7,7 @@
 // const number3 = [...number, ...number1]
 // console.log(number3);
 
-// JS Objects 
+// -------------- JS Objects ------------------------
 
 // // const user = {
 // //     name: "hari",
@@ -54,7 +54,7 @@
 // // ]
 // // console.log(students[1].address)
 
-// // product and price | add all products price also See functions 2morrow
+// // product and price | add all products price 
 
 // // const products = [
 // //     {
@@ -83,6 +83,8 @@
 // // }
 
 // // console.log(total);
+
+// ----------------------- JS Functions --------------------------------
 
 // // function name(a) {
 // //     return `my name is ${a}`
@@ -124,7 +126,7 @@
 // // console.log(`Result:- ${result}`);
 
 
-
+// ------------------------ JS Maps -------------------------------------
 
 
 // const users = [{
@@ -178,21 +180,21 @@
 // console.log(names);
 
 
-// Reduce 
+// ----------------------- Reduce ----------------------------
 
 // const nums = [1, 2, 3, 4];
 
 // const Total = nums.reduce((acc, curr) => acc + curr, 0);
 // console.log(Total);
 
-//Module 
+//------------------------ Module ------------------------
 
 // import multiply, { add, subtract } from './math.js';
 
 // console.log(add(1, 2));
 // console.log(multiply(2, 3));
 
-// Async and Await 
+// -------------------------  Async and Await -------------------------
 
 // async function slowTask() {
 //     console.log("Start Task");
@@ -203,6 +205,8 @@
 
 // slowTask();
 // console.log("This runs immediately");
+
+// -------------------- JS DOM -------------------------------------
 
 // const ptag = document.querySelector("#inner")
 // console.log(ptag);
